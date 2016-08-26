@@ -31,10 +31,10 @@ class MacrosSpec(implicit ee: ExecutionEnv) extends org.specs2.mutable.Specifica
 }
 
 object MacrosSpec {
-  val sealedTraitInstancesOutter = Macros.singletons[SealedTrait]
-  val sealedSubTraitInstancesOutter = Macros.singletons[SealedSubTrait]
-  val sealedClassInstancesOutter = Macros.singletons[SealedClass]
-  val sealedSubClassInstancesOutter = Macros.singletons[SealedSubClass]
+  val sealedTraitInstancesOutter = singletons[SealedTrait]
+  val sealedSubTraitInstancesOutter = singletons[SealedSubTrait]
+  val sealedClassInstancesOutter = singletons[SealedClass]
+  val sealedSubClassInstancesOutter = singletons[SealedSubClass]
 
   sealed trait SealedTrait
 
@@ -42,7 +42,7 @@ object MacrosSpec {
 
     object TraitInner extends SealedTrait
 
-    val sealedTraitInstancesInner = Macros.singletons[SealedTrait]
+    val sealedTraitInstancesInner = singletons[SealedTrait]
   }
 
   sealed trait SealedSubTrait extends SealedTrait
@@ -51,7 +51,7 @@ object MacrosSpec {
 
     object SubTraitInner extends SealedSubTrait
 
-    val sealedSubTraitInstancesInner = Macros.singletons[SealedSubTrait]
+    val sealedSubTraitInstancesInner = singletons[SealedSubTrait]
 
   }
 
@@ -74,7 +74,7 @@ object MacrosSpec {
 
     object ClassInner extends SealedClass
 
-    val sealedClassInstancesInner = Macros.singletons[SealedClass]
+    val sealedClassInstancesInner = singletons[SealedClass]
 
   }
 
@@ -84,7 +84,7 @@ object MacrosSpec {
 
     object SubClassInner extends SealedSubClass
 
-    val sealedSubClassInstancesInner = Macros.singletons[SealedSubClass]
+    val sealedSubClassInstancesInner = singletons[SealedSubClass]
 
   }
 

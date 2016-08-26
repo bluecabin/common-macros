@@ -1,6 +1,6 @@
 organization := "io.bluecabin"
 name := "common-macros"
-version := "1.0.0"
+version := "1.0.0-SNAPSHOT"
 scalaVersion := "2.11.8"
 scalacOptions ++= Seq("-unchecked", "-feature", "-deprecation", "-encoding", "utf8")
 scalacOptions in Test ++= Seq("-Yrangepos")
