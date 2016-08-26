@@ -1,7 +1,7 @@
 organization := "io.bluecabin.common"
 name := "common-macros"
 description := "Common Scala macros"
-version := "1.0.1-SNAPSHOT"
+version := "1.0.1"
 licenses := Seq("Apache-2.0" -> url("http://www.opensource.org/licenses/apache2.0.php"))
 homepage := Some(url("https://github.com/bluecabin/common-macros"))
 scmInfo := Some(ScmInfo(
