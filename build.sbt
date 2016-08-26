@@ -1,6 +1,7 @@
 organization := "io.bluecabin"
 name := "common-macros"
-version := "1.0.0-SNAPSHOT"
+version := "1.0.0"
+licenses := Seq("Apache-2.0" -> url("http://www.opensource.org/licenses/apache2.0.php"))
 scalaVersion := "2.11.8"
 scalacOptions ++= Seq("-unchecked", "-feature", "-deprecation", "-encoding", "utf8")
 scalacOptions in Test ++= Seq("-Yrangepos")
@@ -16,3 +17,4 @@ libraryDependencies ++= {
     "org.specs2" %% "specs2-matcher-extra" % specs2V % Test
   )
 }
+bintrayReleaseOnPublish in ThisBuild := false
