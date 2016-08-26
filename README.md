@@ -2,8 +2,6 @@
 
 Current version is 1.0.0
 
-Some common Scala macros
-
 ## Installation
 
 sbt:
