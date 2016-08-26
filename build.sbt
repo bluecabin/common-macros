@@ -1,6 +1,6 @@
 organization := "io.bluecabin"
 name := "common-macros"
-version := "1.0.0"
+version := "1.1.0-SNAPSHOT"
 licenses := Seq("Apache-2.0" -> url("http://www.opensource.org/licenses/apache2.0.php"))
 scalaVersion := "2.11.8"
 scalacOptions ++= Seq("-unchecked", "-feature", "-deprecation", "-encoding", "utf8")
