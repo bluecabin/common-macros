@@ -1,13 +1,13 @@
 # Common Macros
 
-Current version is 1.0.0
+Current version is 1.0.1
 
 ## Installation
 
 sbt:
 
 ```sbt
-libraryDependencies += "io.bluecabin" %% "common-macros" % "1.0.0"
+libraryDependencies += "io.bluecabin.common" %% "common-macros" % "1.0.1"
 ```
 
 ## Getting Help
