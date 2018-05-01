@@ -11,7 +11,8 @@ scmInfo := Some(ScmInfo(
 )
 scalaVersion := "2.11.12"
 crossScalaVersions := Seq("2.11.12", "2.12.6")
-//releaseCrossBuild := true
+releaseCrossBuild := true
+releaseUseGlobalVersion := false
 scalacOptions ++= Seq("-unchecked", "-feature", "-deprecation", "-encoding", "utf8")
 scalacOptions in Test ++= Seq("-Yrangepos")
 libraryDependencies ++= {
