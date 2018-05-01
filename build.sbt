@@ -1,7 +1,7 @@
 organization := "io.bluecabin.common"
 name := "common-macros"
 description := "Common Scala macros"
-version := "1.0.2-SNAPSHOT"
+version := "1.0.2"
 licenses := Seq("Apache-2.0" -> url("http://www.opensource.org/licenses/apache2.0.php"))
 homepage := Some(url("https://github.com/bluecabin/common-macros"))
 scmInfo := Some(ScmInfo(
@@ -12,7 +12,6 @@ scmInfo := Some(ScmInfo(
 scalaVersion := "2.11.12"
 crossScalaVersions := Seq("2.11.12", "2.12.6")
 releaseCrossBuild := true
-releaseUseGlobalVersion := false
 scalacOptions ++= Seq("-unchecked", "-feature", "-deprecation", "-encoding", "utf8")
 scalacOptions in Test ++= Seq("-Yrangepos")
 libraryDependencies ++= {
